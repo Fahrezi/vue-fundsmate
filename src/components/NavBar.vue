@@ -20,9 +20,13 @@ const handleMenu = () => {
 
 <template>
   <nav
-    class="flex items-center justify-center gap-x-4 -mx-8 sm:mx-auto mb-8 relative"
+    class="flex items-center justify-center gap-x-4 -mx-8 md:mx-auto mb-8 relative"
   >
-    <Menu class="block md:hidden float-end" @click="handleMenu" :size="20" />
+    <Menu
+      class="block md:hidden float-end cursor-pointer"
+      @click="handleMenu"
+      :size="20"
+    />
     <span>
       <RouterLink class="font-bold text-2xl" to="/">fundsmate</RouterLink>
     </span>
@@ -50,7 +54,7 @@ const handleMenu = () => {
       Get Started
     </a>
     <div
-      :class="`h-dvh bg-black/40 absolute top-[64px] w-full md:hidden ${isMenuOpen ? 'block' : 'hidden'}`"
+      :class="`h-dvh bg-black/40 absolute top-[64px] w-full transition-all md:invisible md:opacity-0 ${isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0'}`"
     >
       <ul
         class="bg-[#faf8fd] flex flex-col gap-y-8 p-8 border-t border-gray-200"
