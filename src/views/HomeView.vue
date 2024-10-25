@@ -91,11 +91,13 @@ const details = [
           principal. This can help you save money on interest and pay off your
           mortgage faster, putting you in a better financial position.
         </p>
-        <button
-          class="py-2 px-10 w-fit bg-primary text-semibold text-white rounded-full"
-        >
-          Get Started
-        </button>
+        <span class="border border-primary w-fit rounded-lg">
+          <button
+            class="py-2 px-10 w-fit bg-primary ring-1 ring-primary text-semibold text-white rounded-lg transition-all hover:-translate-x-1 hover:-translate-y-1"
+          >
+            Get Started
+          </button>
+        </span>
       </div>
     </header>
     <main class="flex flex-col md:gap-y-8 mb-20">
@@ -112,7 +114,7 @@ const details = [
         </p>
       </div>
       <div
-        class="grid gap-y-4 md:grid-cols-3 items-center justify-between gap-x-12 min-w-[300px]"
+        class="grid gap-y-4 md:grid-cols-3 items-center justify-between gap-x-4 lg:gap-x-12 min-w-[300px]"
       >
         <BenefitsCard
           class="h-full"

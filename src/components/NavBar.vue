@@ -48,7 +48,7 @@ const handleMenu = () => {
       </li>
     </ul>
     <a
-      class="py-2 px-6 text-primary border-2 border-primary rounded-full hidden sm:block"
+      class="py-2 px-6 text-primary border-2 border-primary rounded-lg hidden sm:block hover:bg-primary hover:text-white transition-all"
       href="#"
     >
       Get Started

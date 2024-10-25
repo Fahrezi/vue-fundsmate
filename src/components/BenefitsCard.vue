@@ -24,10 +24,10 @@ defineProps<{
 }
 
 .benefit-card h3 {
-  @apply font-semibold text-lg md:text-2xl text-slate-700;
+  @apply font-semibold text-lg text-center md:text-xl lg:text-2xl text-slate-700;
 }
 
 .benefit-card p {
-  @apply text-slate-500 text-center text-base md:text-lg;
+  @apply text-slate-500 text-center text-base lg:text-lg;
 }
 </style>
